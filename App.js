@@ -1,10 +1,16 @@
 import React from 'react';
-import { StyleSheet, Text, View } from 'react-native';
+import { StyleSheet, Text, View, Image } from 'react-native';
 
 export default function App() {
   return (
     <View style={styles.container}>
-      <Text>Open up App.js to start working on your app!</Text>
+      <View style={{ alignSelf: 'center', flex: 0 }}>
+        <Image
+          style={{ alignSelf: 'center' }}
+          source={require('./assets/images/dbutt.jpg')}
+          resizeMode="contain"
+        />
+      </View>
     </View>
   );
 }
